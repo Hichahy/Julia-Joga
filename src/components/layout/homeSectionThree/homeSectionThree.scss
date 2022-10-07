@@ -1,0 +1,90 @@
+.home-section-three {
+  display: flex;
+  flex-direction: column;
+
+  .content-box {
+    width: 40%;
+    margin: 40px;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .home-section-three-box-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    img {
+      object-fit: cover;
+      width: 60%;
+      max-height: 100%;
+    }
+  }
+
+  .home-section-three-box-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: 1px solid #0000001b;
+    background-image: url(public/svg/topography.svg);
+
+    .content-box {
+      width: 60%;
+      margin: 60px;
+    }
+
+    img {
+      object-fit: cover;
+      width: 40%;
+      height: 25rem;
+      object-position: top;
+    }
+  }
+}
+
+//Tablet
+
+@media (max-width: 950px) {
+  .home-section-three {
+    .home-section-three-box-2 {
+      img {
+        height: auto;
+      }
+    }
+  }
+}
+
+//Mobile
+@media (max-width: 600px) {
+  .home-section-three {
+    width: 100%;
+
+    .home-section-three-box-1 {
+      flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+
+      .content-box {
+        width: auto;
+      }
+    }
+
+    .home-section-three-box-2 {
+      flex-direction: column;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .content-box {
+        width: auto;
+      }
+    }
+  }
+}

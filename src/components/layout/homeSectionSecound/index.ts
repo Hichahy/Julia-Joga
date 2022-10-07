@@ -1,0 +1,1 @@
+export { HomeSectionSecound } from './HomeSectionSecound'

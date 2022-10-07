@@ -1,9 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+
 
 * {
-  font-family: Rubik, sans-serif;
+  font-family: Oranienbaum, serif;
   box-sizing: border-box;
-  font-size: 100px;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 body {

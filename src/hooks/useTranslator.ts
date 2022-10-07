@@ -1,5 +1,5 @@
-import { en_GB } from "../locale/en_GB"
+import { plGB } from '../locale/enGB';
 
 export const useTranslator = () => {
-    return en_GB
-}
+    return plGB;
+};

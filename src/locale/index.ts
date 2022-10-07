@@ -1,1 +1,1 @@
-export { en_GB } from './en_GB'
+export { plGB } from './enGB';

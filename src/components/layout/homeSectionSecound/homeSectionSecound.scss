@@ -1,0 +1,22 @@
+.home-section-secound {
+  padding: 40px;
+  text-align: center;
+  background: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+    background: #85b27d;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 8rem;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}

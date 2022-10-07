@@ -1,1 +1,1 @@
-import { Dictionary } from './locale' 
+export type { Dictionary, Cards } from './locale'; 
