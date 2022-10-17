@@ -13,6 +13,7 @@
 
   .home-section-three-box-1 {
     display: flex;
+    border: 1px solid #0000001b;
     width: 100%;
     justify-content: space-between;
 
@@ -26,6 +27,7 @@
   .home-section-three-box-2 {
     display: flex;
     width: 100%;
+    margin-top: 30px;
     flex-direction: row-reverse;
     justify-content: space-between;
     border: 1px solid #0000001b;
@@ -76,6 +78,7 @@
 
     .home-section-three-box-2 {
       flex-direction: column;
+      margin-top: 0%;
 
       img {
         width: 100%;

@@ -1,1 +1,1 @@
-export type { Dictionary, Cards } from './locale'; 
+export type { Dictionary, Cards, SliderPhotos } from './locale'; 

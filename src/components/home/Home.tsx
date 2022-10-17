@@ -4,6 +4,7 @@ import { HomeSectionFirst } from '../layout/homeSectionFirst';
 import { HomeSectionSecound } from '../layout/homeSectionSecound';
 import { HomeSectionThree } from '../layout/homeSectionThree';
 import { HomeSectionFourth } from '../layout/homeSectionFourth';
+import { PhotoSlider } from '../photoSlider';
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
         <HomeSectionSecound />
         <HomeSectionThree />
         <HomeSectionFourth />
+        <PhotoSlider />
       </div>
     </div>
   );
