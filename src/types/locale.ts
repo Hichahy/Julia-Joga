@@ -10,3 +10,11 @@ export type Cards = {
   description: string;
   image: string;
 };
+
+export type SliderPhotos = {
+  id: string;
+  image1: string;
+  image2: string;
+  title: string;
+  quote: string;
+};

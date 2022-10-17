@@ -1,0 +1,156 @@
+.slider-img-box {
+  display: flex;
+  height: 100%;
+  margin-right: 10px;
+
+  :first-child {
+    margin-right: 30px;
+  }
+}
+
+.slide-img {
+  height: 100%;
+  object-fit: cover;
+  width: 45%;
+}
+
+article {
+  position: absolute;
+  width: 94%;
+  height: 23rem;
+  opacity: 0;
+  align-items: center;
+  display: flex;
+
+  .product-info {
+    text-align: initial;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 5rem;
+      margin: 0;
+      z-index: 2;
+    }
+
+    h4 {
+      position: absolute;
+      font-size: 30rem;
+      color: rgb(131 131 131 / 6%);
+      top: -62rem;
+      right: 0;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+article.active-slide {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+article.last-slide {
+  transform: translateX(-100%);
+}
+
+article.next-slide {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 830px) {
+  .slider-img-box {
+    width: 42%;
+
+    :first-child {
+      margin-right: 10px;
+    }
+  }
+
+  article {
+    .product-info {
+      p {
+        font-size: 15px;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  article {
+    flex-direction: column;
+    width: 84%;
+    height: 92%;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .product-info {
+      width: auto;
+      height: 47%;
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      div {
+        div {
+          margin-top: 2rem;
+          align-items: flex-end;
+          width: 100%;
+        }
+      }
+    }
+
+    .slider-img-box {
+      width: 100%;
+      justify-content: space-between;
+      order: 2;
+      height: 15rem;
+
+      .slide-img {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
