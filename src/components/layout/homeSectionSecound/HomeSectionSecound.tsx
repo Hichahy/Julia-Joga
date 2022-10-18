@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import {SectionContext} from '../../../app/App'
 import './homeSectionSecound.scss';
 
 export const HomeSectionSecound = () => {
+
+  const {sectionRef1} = useContext(SectionContext)
+
   return (
-    <section className='home-section-secound'>
+    <section ref={sectionRef1} className='home-section-secound'>
       <h2>About Me</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora fugiat nemo totam earum

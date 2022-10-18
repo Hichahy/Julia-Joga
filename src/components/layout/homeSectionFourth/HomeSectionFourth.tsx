@@ -1,10 +1,13 @@
-import React from 'react';
-import './homeSectionFourth.scss';
+import React, { useContext } from 'react';
+import { SectionContext } from '../../../app/App';
 import { cards } from '../../../mocks/homeCards';
+import './homeSectionFourth.scss';
 
 export const HomeSectionFourth = () => {
+  const { sectionRef3 } = useContext(SectionContext);
+
   return (
-    <section className='home-section-fourth'>
+    <section ref={sectionRef3} className='home-section-fourth'>
       <div className='content'>
         <h2>Lorem ipsum</h2>
         <p>
