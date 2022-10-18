@@ -1,13 +1,12 @@
-import React from 'react';
-import { cards } from '../../../mocks/homeCards';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React, { useContext } from 'react';
+import { SectionContext } from '../../../app/App';
 import './homeSectionThree.scss';
 
 export const HomeSectionThree = () => {
+  const {sectionRef2} = useContext(SectionContext);
+
   return (
-    <section className='home-section-three'>
+    <section ref={sectionRef2} className='home-section-three'>
       <div className='home-section-three-box-1'>
         <img src='/public/images/img-1.jpg' alt='joga' />
         <div className='content-box'>
@@ -42,7 +41,6 @@ export const HomeSectionThree = () => {
           </p>
         </div>
       </div>
-      
     </section>
   );
 };
