@@ -12,6 +12,7 @@ export const HomeSectionFirst = () => {
           molestias, voluptatibus consectetur modi tenetur dignissimos deserunt?
         </p>
       </div>
+      <div className='fog'></div>
     </section>
   );
 };

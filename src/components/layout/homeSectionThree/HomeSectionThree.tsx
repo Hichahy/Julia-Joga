@@ -3,11 +3,12 @@ import { SectionContext } from '../../../app/App';
 import './homeSectionThree.scss';
 
 export const HomeSectionThree = () => {
-  const {sectionRef2} = useContext(SectionContext);
+  const { sectionRef2 } = useContext(SectionContext);
 
   return (
     <section ref={sectionRef2} className='home-section-three'>
       <div className='home-section-three-box-1'>
+        <div className='box-background-1'></div>
         <img src='/public/images/img-1.jpg' alt='joga' />
         <div className='content-box'>
           <h2>About Me</h2>
@@ -25,6 +26,7 @@ export const HomeSectionThree = () => {
         </div>
       </div>
       <div className='home-section-three-box-2'>
+        <div className='box-background-2'></div>
         <img src='/public/images/img-2.jpg' alt='joga' />
         <div className='content-box'>
           <h2>About Me</h2>

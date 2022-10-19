@@ -12,6 +12,7 @@
 
   .content {
     width: 40%;
+    z-index: 2;
 
     h1 {
       font-size: 3rem;
@@ -52,6 +53,20 @@
   }
 }
 
+.fog {
+  position: absolute;
+  background: url(public/images/fog.png);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  background-size: 225%;
+  animation: roll-it 90s linear infinite;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 //Mobile
 @media (max-width: 500px) {
   .home-section-first {
@@ -66,5 +81,23 @@
         font-size: 15px;
       }
     }
+  }
+
+  .fog {
+    background-size: 300%;
+  }
+}
+
+@keyframes roll-it {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }

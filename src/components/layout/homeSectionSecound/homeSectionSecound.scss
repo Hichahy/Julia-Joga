@@ -1,7 +1,7 @@
 .home-section-secound {
   padding: 40px;
   text-align: center;
-  background: aliceblue;
+  background: #e0f1ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,12 +11,25 @@
     border: none;
     outline: none;
     padding: 10px;
-    color: white;
-    background: #85b27d;
+    color: rgb(255, 255, 255);
+    background: #85b27dc2;
     font-size: 18px;
     border-radius: 10px;
     width: 8rem;
     margin-top: 30px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+      background: #85b27d;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-section-secound {
+    button {
+      background: #85b27d;
+    }
   }
 }
