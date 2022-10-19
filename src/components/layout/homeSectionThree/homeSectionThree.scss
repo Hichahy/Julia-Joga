@@ -16,16 +16,24 @@
     border: 1px solid #0000001b;
     width: 100%;
     justify-content: space-between;
+    background-image: url(public/svg/lotos.svg);
+    background-repeat: no-repeat;
+    background-position: 98% bottom;
+    background-size: 18rem;
+    border-top: none;
+    position: relative;
 
     img {
       object-fit: cover;
       width: 60%;
       max-height: 100%;
+      z-index: 2;
     }
   }
 
   .home-section-three-box-2 {
     display: flex;
+    position: relative;
     width: 100%;
     margin-top: 30px;
     flex-direction: row-reverse;
@@ -36,15 +44,37 @@
     .content-box {
       width: 60%;
       margin: 60px;
+      z-index: 2;
     }
 
     img {
       object-fit: cover;
+      z-index: 2;
       width: 40%;
       height: 25rem;
       object-position: top;
     }
   }
+}
+
+.box-background-1 {
+  background-color: #ddeefd;
+  height: 27rem;
+  position: absolute;
+  z-index: 1;
+  width: 37rem;
+  right: 39%;
+  bottom: -1rem;
+}
+
+.box-background-2 {
+  background-color: #ffcf00;
+  height: 22rem;
+  position: absolute;
+  z-index: 1;
+  width: 33%;
+  right: 4%;
+  bottom: -12px;
 }
 
 //Tablet
@@ -54,6 +84,16 @@
     .home-section-three-box-2 {
       img {
         height: auto;
+      }
+
+      .box-background {
+        height: 90%;
+        width: 38%;
+      }
+
+      .box-background-2 {
+        right: 8%;
+        height: 29rem;
       }
     }
   }
@@ -66,13 +106,20 @@
 
     .home-section-three-box-1 {
       flex-direction: column;
+      background-position: 85% bottom;
 
       img {
         width: 100%;
+        border-bottom: 10px solid #ddeefd;
+        border-right: 10px solid #ddeefd;
       }
 
       .content-box {
         width: auto;
+      }
+
+      .box-background-1 {
+        display: none;
       }
     }
 
@@ -83,10 +130,16 @@
       img {
         width: 100%;
         height: auto;
+        border-bottom: 10px solid #ffcf00;
+        border-left: 10px solid #ffcf00;
       }
 
       .content-box {
         width: auto;
+      }
+
+      .box-background-2 {
+        display: none;
       }
     }
   }

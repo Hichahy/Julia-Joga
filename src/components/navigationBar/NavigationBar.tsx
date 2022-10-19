@@ -44,7 +44,7 @@ export const NavigationBar = () => {
   return (
     <>
       {openBurger ? <div onClick={handleBurgerMenu} className='burger-overlay' /> : null}
-      <nav style={{ top: `${visible ? "-1px" : "-70px"}` }}>
+      <nav style={{ top: `${visible ? '-1px' : '-70px'}` }}>
         <div className='nav-content-box'>
           <h1>{T.appName}</h1>
           <div className={`${openBurger ? 'active-burger' : 'section-navigation-box'}`}>
@@ -65,8 +65,15 @@ export const NavigationBar = () => {
           </div>
         </div>
         <div className='nav-icon-box'>
-          <i className='bi bi-instagram'></i>
-          <i className='bi bi-facebook'></i>
+          <a href='mailto:contact@test.com'>
+            <button>Contact me?</button>
+          </a>
+          <a href='https://www.instagram.com' target='_blank'>
+            <i className='bi bi-instagram'></i>
+          </a>
+          <a href='https://www.fb.com' target='_blank'>
+            <i className='bi bi-facebook'></i>
+          </a>
         </div>
         <div className='menu-icon'>
           <input

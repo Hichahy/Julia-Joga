@@ -1,4 +1,5 @@
 import { useRef, createContext } from 'react';
+import { Footer } from '../components/footer';
 import { Home } from '../components/home';
 import { NavigationBar } from '../components/navigationBar';
 import './app.scss';
@@ -17,6 +18,7 @@ export const App = () => {
         <NavigationBar />
         <Home />
       </SectionContext.Provider>
+      <Footer />
     </div>
   );
 };
