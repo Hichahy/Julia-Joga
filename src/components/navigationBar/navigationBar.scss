@@ -114,20 +114,17 @@ nav {
       cursor: pointer;
       display: flex;
       flex-direction: column;
-      font-size: 17px;
+      font-size: 14px;
       color: #3b3b3bf7;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-      span {
-        border-bottom: 1px solid #3b3b3bf7;
-        transform: scaleX(0);
-        transition: transform 250ms ease-in-out;
-      }
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+      box-shadow: inset 0 0 0 0 #a4901d79;
+      padding: 0 0.25rem;
+      transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
       &:hover {
-        span {
-          transform: scaleX(1);
-        }
+        box-shadow: inset 100px 0 0 0 #ffc107;
+        color: #434343;
       }
     }
   }
@@ -149,7 +146,7 @@ nav {
     outline: none;
     padding: 10px;
     color: black;
-    background: #ffc107c7;
+    background: #ffd34deb;
     font-size: 15px;
     border-radius: 10px;
     width: 7rem;
@@ -157,7 +154,7 @@ nav {
     -webkit-tap-highlight-color: transparent;
 
     &:hover {
-      background: #ffc107;
+      background: #ffd34d;
     }
   }
 }

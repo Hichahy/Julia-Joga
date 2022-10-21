@@ -1,0 +1,1 @@
+export { PhotoSliderLayout } from './PhotoSliderLayout'
