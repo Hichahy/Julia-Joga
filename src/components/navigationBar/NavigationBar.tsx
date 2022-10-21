@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useContext, useEffect } from 'react';
 import './navigationBar.scss';
 import { SectionContext } from '../../app/App';
@@ -49,18 +50,10 @@ export const NavigationBar = () => {
           <h1>{T.appName}</h1>
           <div className={`${openBurger ? 'active-burger' : 'section-navigation-box'}`}>
             <ul>
-              <li onClick={() => handleScroll(sectionRef1.current)}>
-                section1 <span></span>
-              </li>
-              <li onClick={() => handleScroll(sectionRef2.current)}>
-                section2 <span></span>
-              </li>
-              <li onClick={() => handleScroll(sectionRef3.current)}>
-                section3 <span></span>
-              </li>
-              <li onClick={() => handleScroll(sectionRef4.current)}>
-                section4 <span></span>
-              </li>
+              <li onClick={() => handleScroll(sectionRef1.current)}>section1</li>
+              <li onClick={() => handleScroll(sectionRef2.current)}>section2</li>
+              <li onClick={() => handleScroll(sectionRef3.current)}>section3</li>
+              <li onClick={() => handleScroll(sectionRef4.current)}>section4</li>
             </ul>
           </div>
         </div>

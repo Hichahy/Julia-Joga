@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { slidersPhoto } from '../../../mocks/sliderPhoto';
 import { SliderPhotos } from '../../../types';
-import './photoSlider.scss';
+import './photoSliderLayout.scss';
 
 interface IProps {
   photoIndex: number;
@@ -11,7 +11,13 @@ interface IProps {
   setIndexSlider: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const PhotoSlider = ({ setIndexSlider, indexSlider, stopSlider, photoIndex, sliders }: IProps) => {
+export const PhotoSliderLayout = ({
+  setIndexSlider,
+  indexSlider,
+  stopSlider,
+  photoIndex,
+  sliders,
+}: IProps) => {
   //auto slide
   useEffect(() => {
     const lastIndex = slidersPhoto.length - 1;
@@ -63,5 +69,3 @@ const PhotoSlider = ({ setIndexSlider, indexSlider, stopSlider, photoIndex, slid
     </>
   );
 };
-
-export default PhotoSlider;

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { slidersPhoto } from '../../mocks/sliderPhoto';
-import PhotoSliderLayout from '../layout/photoSlider/PhotoSliderLayout';
+import { PhotoSliderLayout } from '../layout/photoSliderLayout';
 import { SectionContext } from '../../app/App';
 import './photoSlider.scss';
 
