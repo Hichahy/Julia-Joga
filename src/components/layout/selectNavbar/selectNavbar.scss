@@ -1,0 +1,73 @@
+.custom-select-container {
+  position: relative;
+  margin-left: 30px;
+
+  button {
+    background: transparent;
+    border: none;
+    width: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ff1d1d;
+
+    transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: inset 100px 0 0 0 #ffc107;
+      color: #434343;
+    }
+  }
+  ul {
+    position: absolute;
+    z-index: 3;
+    top: 3.3rem;
+    right: -3rem;
+    background-color: rgb(255 255 255 / 94%);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    height: 10rem;
+    width: max-content;
+    margin: 0;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    -webkit-animation: scale-in-ver-top 0.2s linear both;
+    animation: scale-in-ver-top 0.2s linear both;
+
+    li {
+      list-style: none;
+      height: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      animation-delay: 0.2s;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #ff1d1d;
+      padding: 0 0.25rem;
+      transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+      &:hover {
+        box-shadow: inset 100px 0 0 0 #ffc107;
+        color: #434343;
+        
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .custom-select-container {
+    display: none;
+  }
+}

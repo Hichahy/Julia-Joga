@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
 import { useState, useContext, useEffect } from 'react';
 import './navigationBar.scss';
 import { SectionContext } from '../../app/App';
+import { SelectNavbar } from '../layout/selectNavbar';
 import { useTranslator } from '../../hooks';
 
 export const NavigationBar = () => {
   const [yOffset, setYOffset] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [openBurger, setOpenBurger] = useState(false);
+  const [openSelect, setOpenSelect] = useState(false);
   const T = useTranslator();
 
   const { sectionRef1, sectionRef2, sectionRef3, sectionRef4 } = useContext(SectionContext);
@@ -34,6 +36,7 @@ export const NavigationBar = () => {
     setVisible(visible);
 
     setOpenBurger(false);
+    setOpenSelect(false);
   };
 
   //Hidden nav when scroll and show when scroll up
@@ -48,14 +51,17 @@ export const NavigationBar = () => {
       <nav style={{ top: `${visible ? '-1px' : '-70px'}` }}>
         <div className='nav-content-box'>
           <h1>{T.appName}</h1>
-          <div className={`${openBurger ? 'active-burger' : 'section-navigation-box'}`}>
-            <ul>
-              <li onClick={() => handleScroll(sectionRef1.current)}>section1</li>
-              <li onClick={() => handleScroll(sectionRef2.current)}>section2</li>
-              <li onClick={() => handleScroll(sectionRef3.current)}>section3</li>
-              <li onClick={() => handleScroll(sectionRef4.current)}>section4</li>
-            </ul>
-          </div>
+            <SelectNavbar openSelect={openSelect} setOpenSelect={setOpenSelect} handleScroll={handleScroll}/>
+          {openBurger ? (
+            <div className='active-burger'>
+              <ul>
+                <li onClick={() => handleScroll(sectionRef1.current)}>section1</li>
+                <li onClick={() => handleScroll(sectionRef2.current)}>section2</li>
+                <li onClick={() => handleScroll(sectionRef3.current)}>section3</li>
+                <li onClick={() => handleScroll(sectionRef4.current)}>section4</li>
+              </ul>
+            </div>
+          ) : null}
         </div>
         <div className='nav-icon-box'>
           <a href='mailto:contact@test.com'>

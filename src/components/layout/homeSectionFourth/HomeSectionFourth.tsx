@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { SectionContext } from '../../../app/App';
 import { cards } from '../../../mocks/homeCards';
 import './homeSectionFourth.scss';
+import { Slide } from 'react-awesome-reveal';
+
 
 export const HomeSectionFourth = () => {
   const { sectionRef3 } = useContext(SectionContext);
