@@ -11,7 +11,7 @@ export const HomeSectionThree = () => {
         <div className='box-background-1'></div>
         <img src='/public/images/img-1.jpg' alt='joga' />
         <div className='content-box'>
-          <h2>About Me</h2>
+          <h2>Lorem, ipsum.</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, consequuntur
             quis. Velit consequatur repellendus sapiente obcaecati! Esse nobis, obcaecati reiciendis
@@ -25,11 +25,12 @@ export const HomeSectionThree = () => {
           </p>
         </div>
       </div>
+
       <div className='home-section-three-box-2'>
         <div className='box-background-2'></div>
         <img src='/public/images/img-2.jpg' alt='joga' />
         <div className='content-box'>
-          <h2>About Me</h2>
+          <h2>Lorem.</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, consequuntur
             quis. Velit consequatur repellendus sapiente obcaecati! Esse nobis, obcaecati reiciendis

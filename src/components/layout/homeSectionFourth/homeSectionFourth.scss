@@ -1,9 +1,13 @@
 .home-section-fourth {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
 
   .content {
     padding: 30px 60px 15px;
+    position: relative;
+    z-index: 2;
 
     p {
       width: 29rem;
@@ -26,16 +30,16 @@
       margin: 55px 35px;
       padding: 40px;
       background-image: url(/public/svg/card-1.svg);
-      background-color: #faebd7cc;
+      background-color: #faebd7;
 
       &:nth-child(2) {
         background-image: url(/public/svg/card-2.svg);
-        background-color: #e7ffccbd;
+        background-color: #e7ffcc;
       }
 
       &:nth-child(3) {
         background-image: url(/public/svg/card-3.svg);
-        background-color: #c6fef8c4;
+        background-color: #c6fef8;
       }
 
       p {
@@ -50,6 +54,15 @@
       }
     }
   }
+}
+
+.palm {
+  position: absolute;
+  width: 29rem;
+  z-index: 1;
+  right: -2rem;
+  transform: rotate(316deg);
+  top: -20rem;
 }
 
 //MOBILE

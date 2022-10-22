@@ -6,8 +6,5 @@ import { describe, it } from 'vitest';
 describe('Navigation component', () => {
   it('Ref Should go to section', () => {
    render(<NavigationBar />)
-    const sectionRef = screen.getByText('section1');
-    fireEvent.click(sectionRef);
-    screen.debug()
   })
 });
