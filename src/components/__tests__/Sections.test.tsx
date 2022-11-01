@@ -12,6 +12,5 @@ describe('Should render sctions', () => {
     render(<HomeSectionSecound/>);
     render(<HomeSectionThree/>);
     render(<HomeSectionFourth/>);
-    // screen.debug()
   });
 });
